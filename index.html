@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/survey.css">
+    <title>Winter Survey</title>
+  </head>
+<body id="main">
+<div id="page">
+    <h1 id="title" class="title-anim">Winter Satisfaction Survey</h1>
+    <p id="description">A quick survey about winter.<span id="p2">Your thoughts on this matter is important to us.</span></p>
+  <div id="complete-form">
+    <form id="survey-form">
+      <div class="form-label">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text"
+        id="name"
+        class="form-input"
+        name="name"
+        placeholder="Enter your name here" required />
+      </div>
+      <div class="form-label">
+        <label id="email-label" for="email">e-Mail:</label>
+        <input type="email"
+        id="email"
+        class="form-input"
+        name="email"
+        placeholder="Enter your e-mail here" required />
+      </div>
+      <div class="form-label">
+        <label id="number-label" for="number">Age:<span class="optional">(Optional)</span></label>
+        <input type="number"
+        id="number"
+        class="form-input"
+        name="number"
+        placeholder="Age"
+        min="1"
+        max="120" />
+        <label for="number" class="scroll">You can enter your age or scroll up and down to select your age.</label>
+      </div>
+      <div class="form-label">
+        <label for="dropdown" id="dropdown-label">Which season do you prefer?</label>
+        <select id="dropdown" name="season-prefer" class="form-input" required>
+          <option value>Choose a season</option>
+          <option>Winter</option>
+          <option>Summer</option>
+          <option>Spring</option>
+          <option>Autumn</option>
+        </select>
+      </div>
+      <div class="form-label">
+        <label for="dropdown" id="dropdown-label2">Which season do you <span class="not">NOT</span> prefer?</label>
+        <select id="dropdown2" name="season-not-prefer" class="form-input" required>
+          <option value>Choose a season</option>
+          <option>Winter</option>
+          <option>Summer</option>
+          <option>Spring</option>
+          <option>Autumn</option>
+        </select>
+      </div>
+      <div class="form-label">
+        <p>
+          Would you reside in one of the top 10 coldest countries of the world?
+        </p>
+
+        <label>
+          <input type="radio" class="input-radio" name="living-preference" value="yes">Yes</label>
+        <label>
+          <input type="radio" class="input-radio" name="living-preference" value="no">No</label>
+        <label>
+          <input type="radio" class="input-radio" name="living-preference" value="maybe">Maybe</label>
+
+      </div>
+      <div class="form-label">
+        <p id="winter-favs">What makes you like winter?<span class="check">(Check all the ones that you like)</span></p>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="cold" class="input-checbox">The Cold
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="snow" class="input-checbox">The Snow
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="food" class="input-checbox">Comfort Food
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="ski" class="input-checbox">Skiing
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="snowboard" class="input-checbox">Snowboarding
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="sled" class="input-checbox">Sledding
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="fresh-air" class="input-checbox">Fresh Crisp Air
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="no-bugs" class="input-checbox">No Bugs
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="snuggle" class="input-checbox">Snuggling
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="snowman" class="input-checbox">Build a Snowman
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="blankets" class="input-checbox">Blankets
+        </label>
+        <label>
+          <input type="checkbox" name="winter-favourites" value="snowball-fights" class="input-checbox">Snowball Fights
+        </label>
+      </div>
+      <div class="form-label">
+        <p>List any other comments about winter that you like, or even don't like.</p>
+        <textarea id="comments"
+        class="comments-input"
+        name="comment"
+        placeholder="Enter your comments here..."></textarea>
+      </div>
+      <div class="form-label">
+        <button id="submit" type="submit" class="submit-button">Submit Your Answers</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
