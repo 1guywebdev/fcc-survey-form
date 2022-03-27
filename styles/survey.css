@@ -38,7 +38,7 @@ body::before {
   width: 100%;
 }
 #title {
-  color: var(--blue);
+  color: black;
   font-family: Righteous, serif, sans-serif;
   text-align: center;
   font-size: 4rem;
