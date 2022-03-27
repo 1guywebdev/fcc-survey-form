@@ -42,7 +42,7 @@ body::before {
   font-family: Righteous, serif, sans-serif;
   text-align: center;
   font-size: 4rem;
-  text-shadow: 2px 5px 10px black, 0px -5px 10px gray, 0px 0px 15px white;
+  text-shadow: 2px 5px 10px #1034c8, 0px -5px 10px #6f8cd1, 0px 0px 15px white;
 }
 #description {
   text-align: center;
